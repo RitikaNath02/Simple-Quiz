@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(14, 14, 97);
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    background-color: rgb(144, 198, 246);
+    border-radius: 10px;
+    border: 2px solid black;
+   
+    margin-top: 100px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+}
+.quiz{
+    /* border: 2px solid black; */
+}
+h1{
+    font-weight: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    font-family: 'Kanit', sans-serif;
+}
+h2{
+    padding-top: 30px;
+    font-weight: bold;
+
+}
+
+#answer-buttons{
+    display: flex;
+ 
+    margin: 12px 0;
+    padding: 34px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.btn{
+    margin: 12px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: left;
+    background: #fff;
+    color: #222;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.btn:hover:not([disabled]){
+    background: #716f6f;
+    color:#fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next{
+   
+    width: 120px;
+    height: 34px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(50, 28, 147);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin:20px auto 0;
+}
+
+#next:hover{
+    background: rgb(71, 71, 252);
+}
+
+
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
